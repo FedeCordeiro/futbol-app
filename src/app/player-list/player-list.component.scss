@@ -5,6 +5,10 @@ img {
     mask-image: linear-gradient(black 70%, transparent 100%);
 }
 
+p {
+    text-transform: uppercase;
+}
+
 img:hover {
     transition: 0.3s;
     filter: drop-shadow(0 0 15px white);
