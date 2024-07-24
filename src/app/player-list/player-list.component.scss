@@ -1,0 +1,15 @@
+img {
+    width: 260px;
+    height: 420px;
+    transition: 0.3s;
+    mask-image: linear-gradient(black 70%, transparent 100%);
+}
+
+img:hover {
+    transition: 0.3s;
+    filter: drop-shadow(0 0 15px white);
+}
+
+span {
+    margin: 2px;
+}

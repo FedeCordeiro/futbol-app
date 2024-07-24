@@ -1,0 +1,20 @@
+<h1 class="text-center mb-3">PLANTILLA DE JUGADORES</h1>
+
+<div class="row m-2">
+  @for (player of players; track player) {
+  <div class="col-sm-6 col-md-4 col-lg-3 align-items-center text-center mb-5">
+    <img [src]="player.src" class="card-img-top mb-4" [alt]="player.name" />
+    <h5 class="card-title">{{ player.name }}</h5>
+    <p class="card-text">{{ player.position }}</p>
+    @if (player.goals > 0) {
+        <span class="badge text-bg-success">Goles: {{player.goals}}</span>
+    }
+    @if (player.yellowCards > 0) {
+        <span class="badge text-bg-warning">Amarillas: {{player.yellowCards}}</span>
+    }
+    @if (player.redCards > 0) {
+        <span class="badge text-bg-danger">Rojas: {{player.redCards}}</span>
+    }
+  </div>
+  }
+</div>
