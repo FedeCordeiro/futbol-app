@@ -1,0 +1,21 @@
+.container-fluid {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-fluid {
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.img-fluid:hover {
+    filter: none;
+}
+
+.casaca {
+    width: 200px;
+    height: 200px;
+}
