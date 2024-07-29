@@ -1,0 +1,34 @@
+<h1 class="text-center">Tabla de Zona B - Poulsen</h1>
+
+<div class="container-fluid d-flex justify-content-center">
+<table class="w-75">
+    <thead>
+        <tr>
+            <th>Equipos</th>
+            <th>J</th>
+            <th>G</th>
+            <th>E</th>
+            <th>P</th>
+            <th>GF</th>
+            <th>GC</th>
+            <th>DF</th>
+            <th>PTS</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (team of teams; track team.positions) { 
+        <tr>
+            <td>{{team.name}}</td>
+            <td>{{team.games}}</td>
+            <td>{{team.g}}</td>
+            <td>{{team.e}}</td>
+            <td>{{team.p}}</td>
+            <td>{{team.gf}}</td>
+            <td>{{team.gc}}</td>
+            <td>{{team.gf - team.gc}}</td>
+            <td class="text-danger">{{team.pts}}</td>
+        </tr>
+    }
+    </tbody>
+</table>
+</div>
