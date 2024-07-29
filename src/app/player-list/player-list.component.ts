@@ -96,6 +96,14 @@ export class PlayerListComponent {
       redCards: 0
     },
     {
+      name: 'Sergio Camejo',
+      src: './assets/img/Checho.png',
+      position: 'Mediocampista',
+      goals: 0,
+      yellowCards: 0,
+      redCards: 0
+    },
+    {
       name: 'Enzo Reynoso',
       src: './assets/img/Reynoso.png',
       position: 'Delantero',
